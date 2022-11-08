@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background: hsl(27, 66%, 92%);
+  font-family: "DM Sans";
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.orange {
+  background: #ec755d;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 280px;
+  padding: 27px 39px 25px 32px;
+}
+
+.orange-content > h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #ffffff;
+}
+
+.orange-content > h2 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+
+  color: #fffbf6;
+}
+
+.logo {
+  position: relative;
+  width: 72px;
+  height: 48px;
+}
+
+.white-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  border: 2px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.black-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* white section* */
+
+.white {
+  padding: 2rem 40px 40px 40px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 66px;
+}
+
+.white > h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+
+  color: #382314;
+}
+
+.chart-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart-container::after {
+  content: "";
+  background: #f8e9dd;
+  border-radius: 1px;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: -32px;
+}
+
+.block {
+  width: 50.36px;
+  height: 100px;
+  background: #ec755d;
+  border-radius: 5px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-left > p:first-of-type {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #92857a;
+}
+
+.total-expense {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+
+  color: #382314;
+}
+
+.total-right {
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.total-right > p:first-of-type {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: right;
+
+  color: #382314;
+}
+
+.total-right > p:last-of-type {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #92857a;
+}
