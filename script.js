@@ -38,8 +38,9 @@ const newData = fetch("data.json")
   .then((res) => res.json())
   .then((data) => {
     data.map((el) => {
+      console.log(el.amount);
       let highestAmount = Math.max(...el.amount);
-
+      console.log(highestAmount);
       if (el.amount === highestAmount) {
         height = 150;
         return `<div class="chart">
