@@ -32,12 +32,14 @@ const chartContainer = document.querySelector(".chart-container");
 // ];
 
 // let finalData;
-const highestAmount = Math.max(...data.map((el) => el.amount));
+// const highestAmount = Math.max(...data.map((el) => el.amount));
 
 const newData = fetch("data.json")
   .then((res) => res.json())
   .then((data) => {
     data.map((el) => {
+      let highestAmount = Math.max(...el.amount);
+
       if (el.amount === highestAmount) {
         height = 150;
         return `<div class="chart">
