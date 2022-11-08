@@ -62,6 +62,8 @@ const newData = fetch("data.json")
     console.log(err);
   });
 
+console.log(newData);
+
 // const newData = data.map((el) => {
 //   if (el.amount === highestAmount) {
 //     height = 150;
