@@ -146,7 +146,7 @@ main {
 @media (max-width: 540px) {
   .white {
     padding: 24px 20px 24px 20px;
-    gap: 18px;
+    gap: 14px;
     border-radius: 10px;
   }
 
@@ -157,6 +157,7 @@ main {
 }
 
 .chart-container {
+  flex-basis: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -225,8 +226,21 @@ main {
 }
 
 @media (max-width: 540px) {
+  .chart-container {
+    margin-bottom: 28px;
+  }
+
+  .chart-container::after {
+    bottom: -24px;
+  }
   .chart {
     gap: 11px;
+  }
+
+  .chart-amount {
+    padding: 6px;
+    font-size: 12px;
+    line-height: 18px;
   }
 
   .block,
@@ -260,6 +274,26 @@ main {
   color: #382314;
 }
 
+@media (max-width: 540px) {
+  .total {
+    padding-block: 0px;
+  }
+  .total-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .total-left > p:first-of-type {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .total-expense {
+    font-size: 30px;
+    line-height: 39px;
+  }
+}
+
 .total-right {
   align-self: flex-end;
   justify-self: flex-end;
@@ -282,4 +316,12 @@ main {
   line-height: 23px;
 
   color: #92857a;
+}
+
+@media (max-width: 540px) {
+  .total-right > p:first-of-type,
+  .total-right > p:last-of-type {
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
