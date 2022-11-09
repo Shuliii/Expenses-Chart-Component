@@ -33,12 +33,12 @@ const chartContainer = document.querySelector(".chart-container");
 
 // let finalData;
 // const highestAmount = Math.max(...data.map((el) => el.amount));
-
-const newData = fetch("data.json")
+let newData;
+fetch("data.json")
   .then((res) => res.json())
   .then((data) => {
     console.log(data);
-    return data;
+    newData = data;
   })
   .catch((err) => {
     console.log(err);
