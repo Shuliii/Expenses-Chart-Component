@@ -45,7 +45,7 @@ fetch("data.json")
   });
 
 //
-console.log(newData);
+console.log(await newData);
 
 // const newData = data.map((el) => {
 //   if (el.amount === highestAmount) {
