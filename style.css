@@ -225,6 +225,10 @@ main {
 }
 
 @media (max-width: 540px) {
+  .chart {
+    gap: 11px;
+  }
+
   .block,
   .block-high {
     width: 30px;
