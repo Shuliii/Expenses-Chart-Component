@@ -55,8 +55,8 @@ fetch("data.json")
                 <p>${el.day}</p>
             </div>`;
       }
-      console.log(newData);
     });
+    console.log(newData);
   })
   .catch((err) => {
     console.log(err);
