@@ -57,6 +57,8 @@ fetch("data.json")
       }
     });
     console.log(newData);
+    const insertHTML = newData.join("");
+    chartContainer.innerHTML = insertHTML;
   })
   .catch((err) => {
     console.log(err);
@@ -79,6 +81,3 @@ fetch("data.json")
 //     </div>`;
 //   }
 // });
-
-const insertHTML = newData.join("");
-chartContainer.innerHTML = insertHTML;
