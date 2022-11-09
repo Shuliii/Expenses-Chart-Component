@@ -85,6 +85,45 @@ main {
   right: 0;
 }
 
+@media (max-width: 540px) {
+  body {
+    padding-inline: 16px;
+  }
+  main {
+    flex-basis: 100%;
+  }
+  .orange {
+    border-radius: 10px;
+    gap: 155px;
+    padding: 20px 24px 22px 20px;
+  }
+
+  .orange-content {
+    gap: 4px;
+  }
+
+  .orange-content > h1 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .orange-content > h2 {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 40px;
+  }
+
+  .white-logo,
+  .black-logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 /* white section* */
 
 .white {
@@ -102,6 +141,19 @@ main {
   line-height: 42px;
 
   color: #382314;
+}
+
+@media (max-width: 540px) {
+  .white {
+    padding: 24px 20px 24px 20px;
+    gap: 18px;
+    border-radius: 10px;
+  }
+
+  .white > h2 {
+    font-size: 24px;
+    line-height: 31px;
+  }
 }
 
 .chart-container {
@@ -172,9 +224,18 @@ main {
   background: #b4e0e5;
 }
 
+@media (max-width: 540px) {
+  .block,
+  .block-high {
+    width: 30px;
+    border-radius: 3px;
+  }
+}
+
 .total {
   display: flex;
   justify-content: space-between;
+  padding-block: 1px;
 }
 
 .total-left > p:first-of-type {
