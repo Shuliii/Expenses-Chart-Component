@@ -44,7 +44,6 @@ fetch("data.json")
     console.log(err);
   });
 
-//
 console.log(await newData);
 
 // const newData = data.map((el) => {
