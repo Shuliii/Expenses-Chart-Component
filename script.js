@@ -38,26 +38,7 @@ const newData = fetch("data.json")
   .then((res) => res.json())
   .then((data) => {
     console.log(data);
-    data.map((el) => {
-      console.log(el.amount);
-      let highestAmount = Math.max(...el.amount);
-      console.log(highestAmount);
-      if (el.amount === highestAmount) {
-        height = 150;
-        return `<div class="chart">
-            <div class="chart-amount hidden">${el.amount}</div>
-            <div class="block-high blue" style="height: ${height}px"></div>
-            <p>${el.day}</p>
-        </div>`;
-      } else {
-        height = (el.amount / highestAmount) * 150;
-        return `<div class="chart">
-        <div class="chart-amount hidden">${el.amount}</div>
-            <div class="block" style="height: ${height}px"></div>
-            <p>${el.day}</p>
-        </div>`;
-      }
-    });
+    return data;
   })
   .catch((err) => {
     console.log(err);
